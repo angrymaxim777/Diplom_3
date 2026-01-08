@@ -1,11 +1,14 @@
 package tests;
 
+import api.LoginRequest;
+import api.UserRequest;
 import api.UserApi;
 import io.qameta.allure.Description;
 import io.qameta.allure.junit4.DisplayName;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 import pages.LoginPage;
 import pages.MainPage;
@@ -19,15 +22,36 @@ public class RegistrationTest extends BaseTest {
     private String password;
     private String name;
     private String accessToken;
+    private boolean userCreated = false;
+
+    @Before
+    @Override
+    public void setUp() {
+        super.setUp();
+        // Инициализация переменных
+        userCreated = false;
+        accessToken = null;
+    }
 
     @After
     @DisplayName("Очистка тестовых данных")
     @Description("Удаление тестового пользователя после выполнения теста")
     public void cleanup() {
         // Удаляем пользователя после теста через API
-        if (accessToken != null && !accessToken.isEmpty()) {
-            UserApi.deleteUser(accessToken);
-            System.out.println("Тестовый пользователь удален");
+        if (userCreated && email != null && password != null) {
+            try {
+                // Получаем токен через API для удаления
+                LoginRequest loginRequest = new LoginRequest(email, password);
+                Response loginResponse = UserApi.loginUser(loginRequest);
+
+                if (loginResponse.getStatusCode() == 200) {
+                    accessToken = UserApi.getAccessToken(loginResponse);
+                    UserApi.deleteUser(accessToken);
+                    System.out.println("Тестовый пользователь удален");
+                }
+            } catch (Exception e) {
+                System.err.println("Ошибка при удалении пользователя: " + e.getMessage());
+            }
         }
     }
 
@@ -73,12 +97,8 @@ public class RegistrationTest extends BaseTest {
         assertTrue("После регистрации должен быть переход на страницу логина",
                 loginPage.isLoginButtonDisplayed());
 
-        // Логинимся через API, чтобы получить токен для последующего удаления
-        Response loginResponse = UserApi.loginUser(email, password);
-        if (loginResponse.getStatusCode() == 200) {
-            accessToken = UserApi.getAccessToken(loginResponse);
-            System.out.println("Токен получен для удаления пользователя");
-        }
+        // Отмечаем, что пользователь создан
+        userCreated = true;
     }
 
     @Test
@@ -100,5 +120,8 @@ public class RegistrationTest extends BaseTest {
         // Проверяем отображение ошибки для некорректного пароля
         assertTrue("Должна отображаться ошибка для короткого пароля",
                 registrationPage.isPasswordErrorDisplayed());
+
+        // Пользователь не создан, поэтому не будем удалять
+        userCreated = false;
     }
 }

@@ -12,22 +12,20 @@ public class UserApi {
         RestAssured.baseURI = BASE_URL;
     }
 
-    @Step("Создать пользователя: {email}")
-    public static Response createUser(String email, String password, String name) {
+    @Step("Создать пользователя")
+    public static Response createUser(UserRequest userRequest) {
         return given()
                 .header("Content-type", "application/json")
-                .body(String.format("{\"email\":\"%s\",\"password\":\"%s\",\"name\":\"%s\"}",
-                        email, password, name))
+                .body(userRequest)
                 .when()
                 .post("/auth/register");
     }
 
-    @Step("Авторизовать пользователя: {email}")
-    public static Response loginUser(String email, String password) {
+    @Step("Авторизовать пользователя")
+    public static Response loginUser(LoginRequest loginRequest) {
         return given()
                 .header("Content-type", "application/json")
-                .body(String.format("{\"email\":\"%s\",\"password\":\"%s\"}",
-                        email, password))
+                .body(loginRequest)
                 .when()
                 .post("/auth/login");
     }
