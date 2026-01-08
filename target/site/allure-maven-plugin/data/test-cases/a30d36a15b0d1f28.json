@@ -1,0 +1,185 @@
+{
+  "uid" : "a30d36a15b0d1f28",
+  "name" : "Проверка перехода к разделу 'Начинки'",
+  "fullName" : "tests.ConstructorTest.testSwitchToFillingsSection",
+  "historyId" : "9cbf64c029d3434e98c7aaf6acaa01d4",
+  "time" : {
+    "start" : 1767855820715,
+    "stop" : 1767855822535,
+    "duration" : 1820
+  },
+  "description" : "Тест проверяет, что при клике на раздел 'Начинки' он становится активным",
+  "descriptionHtml" : "<p>Тест проверяет, что при клике на раздел 'Начинки' он становится активным</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Тест проверяет, что при клике на раздел 'Начинки' он становится активным",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Настройка драйвера и открытие браузера",
+      "time" : {
+        "start" : 1767855820715,
+        "stop" : 1767855822015,
+        "duration" : 1300
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Создать драйвер для браузера: yandex",
+        "time" : {
+          "start" : 1767855820715,
+          "stop" : 1767855821558,
+          "duration" : 843
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Настроить YandexDriver",
+          "time" : {
+            "start" : 1767855820715,
+            "stop" : 1767855821482,
+            "duration" : 767
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "browserName",
+          "value" : "yandex"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверить загрузку страницы",
+      "time" : {
+        "start" : 1767855822015,
+        "stop" : 1767855822077,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать раздел 'Начинки'",
+      "time" : {
+        "start" : 1767855822077,
+        "stop" : 1767855822331,
+        "duration" : 254
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверить, что раздел 'Начинки' активен",
+      "time" : {
+        "start" : 1767855822331,
+        "stop" : 1767855822353,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Завершение теста",
+      "time" : {
+        "start" : 1767855822353,
+        "stop" : 1767855822353,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ConstructorTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testSwitchToFillingsSection"
+  }, {
+    "name" : "suite",
+    "value" : "Тестирование раздела 'Конструктор'"
+  }, {
+    "name" : "host",
+    "value" : "WIN-BGDUOA9RM37"
+  }, {
+    "name" : "thread",
+    "value" : "20860@WIN-BGDUOA9RM37.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "647b9928dc218439",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767855772705,
+        "stop" : 1767855774115,
+        "duration" : 1410
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a30d36a15b0d1f28.json",
+  "parameterValues" : [ ]
+}
