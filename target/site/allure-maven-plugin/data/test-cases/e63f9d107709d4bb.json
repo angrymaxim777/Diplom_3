@@ -1,0 +1,356 @@
+{
+  "uid" : "e63f9d107709d4bb",
+  "name" : "Вход через кнопку 'Войти в аккаунт' на главной",
+  "fullName" : "tests.LoginTest.testLoginFromMainPage",
+  "historyId" : "277e7e77c1617a61554f1a06f8157205",
+  "time" : {
+    "start" : 1767855831485,
+    "stop" : 1767855834366,
+    "duration" : 2881
+  },
+  "description" : "Проверка входа пользователя через основную кнопку входа на главной странице",
+  "descriptionHtml" : "<p>Проверка входа пользователя через основную кнопку входа на главной странице</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Проверка входа пользователя через основную кнопку входа на главной странице",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Настройка драйвера и открытие браузера",
+      "time" : {
+        "start" : 1767855831485,
+        "stop" : 1767855832781,
+        "duration" : 1296
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Создать драйвер для браузера: yandex",
+        "time" : {
+          "start" : 1767855831485,
+          "stop" : 1767855832230,
+          "duration" : 745
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Настроить YandexDriver",
+          "time" : {
+            "start" : 1767855831485,
+            "stop" : 1767855832179,
+            "duration" : 694
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "browserName",
+          "value" : "yandex"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Создание тестового пользователя через API",
+      "time" : {
+        "start" : 1767855832782,
+        "stop" : 1767855832976,
+        "duration" : 194
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Сгенерировать email",
+        "time" : {
+          "start" : 1767855832782,
+          "stop" : 1767855832782,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Сгенерировать пароль",
+        "time" : {
+          "start" : 1767855832782,
+          "stop" : 1767855832782,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Сгенерировать имя",
+        "time" : {
+          "start" : 1767855832782,
+          "stop" : 1767855832782,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Создать пользователя",
+        "time" : {
+          "start" : 1767855832782,
+          "stop" : 1767855832964,
+          "duration" : 182
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "userRequest",
+          "value" : "api.UserRequest@ae20523"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Получить accessToken из ответа",
+        "time" : {
+          "start" : 1767855832964,
+          "stop" : 1767855832976,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "response",
+          "value" : "io.restassured.internal.RestAssuredResponseImpl@5655d64"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 5,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать кнопку 'Войти в аккаунт'",
+      "time" : {
+        "start" : 1767855832976,
+        "stop" : 1767855833106,
+        "duration" : 130
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Выполнить вход с email: testuser_c1f08bb7@example.com",
+      "time" : {
+        "start" : 1767855833106,
+        "stop" : 1767855833378,
+        "duration" : 272
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Ввести email: testuser_c1f08bb7@example.com",
+        "time" : {
+          "start" : 1767855833107,
+          "stop" : 1767855833215,
+          "duration" : 108
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "testuser_c1f08bb7@example.com"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Ввести пароль",
+        "time" : {
+          "start" : 1767855833215,
+          "stop" : 1767855833319,
+          "duration" : 104
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "password_0ecb9e32"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Нажать кнопку 'Войти'",
+        "time" : {
+          "start" : 1767855833319,
+          "stop" : 1767855833378,
+          "duration" : 59
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "testuser_c1f08bb7@example.com"
+      }, {
+        "name" : "password",
+        "value" : "password_0ecb9e32"
+      } ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверить отображение кнопки 'Оформить заказ'",
+      "time" : {
+        "start" : 1767855833378,
+        "stop" : 1767855833532,
+        "duration" : 154
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Удалить пользователя",
+      "time" : {
+        "start" : 1767855833532,
+        "stop" : 1767855834212,
+        "duration" : 680
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "accessToken",
+        "value" : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NWY1NmQ4OTg0MjcwMDAxYmUyZTI2OCIsImlhdCI6MTc2Nzg1NTgzMiwiZXhwIjoxNzY3ODU3MDMyfQ.zH_yDJpjrdngGy4t-YI929usPVAPi3AFByf-lPqLQmU"
+      } ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Завершение теста",
+      "time" : {
+        "start" : 1767855834212,
+        "stop" : 1767855834212,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 17,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLoginFromMainPage"
+  }, {
+    "name" : "suite",
+    "value" : "Тестирование авторизации пользователя"
+  }, {
+    "name" : "host",
+    "value" : "WIN-BGDUOA9RM37"
+  }, {
+    "name" : "thread",
+    "value" : "20860@WIN-BGDUOA9RM37.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ecd338cadfedaa87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767855783315,
+        "stop" : 1767855785819,
+        "duration" : 2504
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e63f9d107709d4bb.json",
+  "parameterValues" : [ ]
+}

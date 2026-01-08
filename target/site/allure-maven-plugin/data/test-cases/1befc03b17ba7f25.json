@@ -1,0 +1,185 @@
+{
+  "uid" : "1befc03b17ba7f25",
+  "name" : "Проверка перехода к разделу 'Соусы'",
+  "fullName" : "tests.ConstructorTest.testSwitchToSaucesSection",
+  "historyId" : "53aa103a1f5eeb5395f3590a567717b4",
+  "time" : {
+    "start" : 1767855819114,
+    "stop" : 1767855820710,
+    "duration" : 1596
+  },
+  "description" : "Тест проверяет, что при клике на раздел 'Соусы' он становится активным",
+  "descriptionHtml" : "<p>Тест проверяет, что при клике на раздел 'Соусы' он становится активным</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Тест проверяет, что при клике на раздел 'Соусы' он становится активным",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Настройка драйвера и открытие браузера",
+      "time" : {
+        "start" : 1767855819114,
+        "stop" : 1767855820249,
+        "duration" : 1135
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Создать драйвер для браузера: yandex",
+        "time" : {
+          "start" : 1767855819114,
+          "stop" : 1767855819812,
+          "duration" : 698
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Настроить YandexDriver",
+          "time" : {
+            "start" : 1767855819114,
+            "stop" : 1767855819757,
+            "duration" : 643
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "browserName",
+          "value" : "yandex"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверить загрузку страницы",
+      "time" : {
+        "start" : 1767855820251,
+        "stop" : 1767855820303,
+        "duration" : 52
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать раздел 'Соусы'",
+      "time" : {
+        "start" : 1767855820303,
+        "stop" : 1767855820497,
+        "duration" : 194
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверить, что раздел 'Соусы' активен",
+      "time" : {
+        "start" : 1767855820497,
+        "stop" : 1767855820518,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Завершение теста",
+      "time" : {
+        "start" : 1767855820518,
+        "stop" : 1767855820518,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ConstructorTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testSwitchToSaucesSection"
+  }, {
+    "name" : "suite",
+    "value" : "Тестирование раздела 'Конструктор'"
+  }, {
+    "name" : "host",
+    "value" : "WIN-BGDUOA9RM37"
+  }, {
+    "name" : "thread",
+    "value" : "20860@WIN-BGDUOA9RM37.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fdaccf629eea9095",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767855771220,
+        "stop" : 1767855772700,
+        "duration" : 1480
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1befc03b17ba7f25.json",
+  "parameterValues" : [ ]
+}

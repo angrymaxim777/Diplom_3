@@ -1,0 +1,323 @@
+{
+  "uid" : "33260841ca2e01a",
+  "name" : "Регистрация с коротким паролем",
+  "fullName" : "tests.RegistrationTest.testRegistrationWithShortPassword",
+  "historyId" : "4ee3595cc24cfdea1ee9f3da7dc11b39",
+  "time" : {
+    "start" : 1767855840319,
+    "stop" : 1767855842260,
+    "duration" : 1941
+  },
+  "description" : "Проверка отображения ошибки при регистрации с паролем менее 6 символов",
+  "descriptionHtml" : "<p>Проверка отображения ошибки при регистрации с паролем менее 6 символов</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Проверка отображения ошибки при регистрации с паролем менее 6 символов",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Настройка драйвера и открытие браузера",
+      "time" : {
+        "start" : 1767855840319,
+        "stop" : 1767855841579,
+        "duration" : 1260
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Создать драйвер для браузера: yandex",
+        "time" : {
+          "start" : 1767855840319,
+          "stop" : 1767855840992,
+          "duration" : 673
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Настроить YandexDriver",
+          "time" : {
+            "start" : 1767855840319,
+            "stop" : 1767855840945,
+            "duration" : 626
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "browserName",
+          "value" : "yandex"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Генерация тестовых данных с коротким паролем",
+      "time" : {
+        "start" : 1767855841579,
+        "stop" : 1767855841580,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Сгенерировать email",
+        "time" : {
+          "start" : 1767855841579,
+          "stop" : 1767855841579,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Сгенерировать имя",
+        "time" : {
+          "start" : 1767855841579,
+          "stop" : 1767855841579,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : false,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать кнопку 'Войти в аккаунт'",
+      "time" : {
+        "start" : 1767855841580,
+        "stop" : 1767855841707,
+        "duration" : 127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать ссылку 'Зарегистрироваться'",
+      "time" : {
+        "start" : 1767855841707,
+        "stop" : 1767855841774,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Заполнить форму регистрации",
+      "time" : {
+        "start" : 1767855841775,
+        "stop" : 1767855842040,
+        "duration" : 265
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Ввести имя: TestUser_50ec0f",
+        "time" : {
+          "start" : 1767855841775,
+          "stop" : 1767855841880,
+          "duration" : 105
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "name",
+          "value" : "TestUser_50ec0f"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Ввести email: testuser_9345121b@example.com",
+        "time" : {
+          "start" : 1767855841880,
+          "stop" : 1767855841970,
+          "duration" : 90
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "testuser_9345121b@example.com"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Ввести пароль",
+        "time" : {
+          "start" : 1767855841970,
+          "stop" : 1767855842040,
+          "duration" : 70
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "12345"
+        } ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "name",
+        "value" : "TestUser_50ec0f"
+      }, {
+        "name" : "email",
+        "value" : "testuser_9345121b@example.com"
+      }, {
+        "name" : "password",
+        "value" : "12345"
+      } ],
+      "stepsCount" : 3,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать кнопку 'Зарегистрироваться'",
+      "time" : {
+        "start" : 1767855842041,
+        "stop" : 1767855842092,
+        "duration" : 51
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверить отображение ошибки пароля",
+      "time" : {
+        "start" : 1767855842092,
+        "stop" : 1767855842125,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Завершение теста",
+      "time" : {
+        "start" : 1767855842125,
+        "stop" : 1767855842125,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 15,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.RegistrationTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testRegistrationWithShortPassword"
+  }, {
+    "name" : "suite",
+    "value" : "Тестирование регистрации пользователя"
+  }, {
+    "name" : "host",
+    "value" : "WIN-BGDUOA9RM37"
+  }, {
+    "name" : "thread",
+    "value" : "20860@WIN-BGDUOA9RM37.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8cf06664bc8d5880",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767855791487,
+        "stop" : 1767855793281,
+        "duration" : 1794
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "33260841ca2e01a.json",
+  "parameterValues" : [ ]
+}

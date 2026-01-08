@@ -1,0 +1,215 @@
+{
+  "uid" : "5855803bab7c6667",
+  "name" : "Проверка возврата к разделу 'Булки'",
+  "fullName" : "tests.ConstructorTest.testSwitchBackToBunsSection",
+  "historyId" : "5f9199fa6c12d506f95eacbad881792d",
+  "time" : {
+    "start" : 1767855816285,
+    "stop" : 1767855819025,
+    "duration" : 2740
+  },
+  "description" : "Тест проверяет возврат к разделу 'Булки' после перехода к другому разделу",
+  "descriptionHtml" : "<p>Тест проверяет возврат к разделу 'Булки' после перехода к другому разделу</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Тест проверяет возврат к разделу 'Булки' после перехода к другому разделу",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Настройка драйвера и открытие браузера",
+      "time" : {
+        "start" : 1767855816315,
+        "stop" : 1767855818546,
+        "duration" : 2231
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Создать драйвер для браузера: yandex",
+        "time" : {
+          "start" : 1767855816335,
+          "stop" : 1767855818006,
+          "duration" : 1671
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "Настроить YandexDriver",
+          "time" : {
+            "start" : 1767855816335,
+            "stop" : 1767855817934,
+            "duration" : 1599
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ ],
+          "stepsCount" : 0,
+          "hasContent" : false,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "browserName",
+          "value" : "yandex"
+        } ],
+        "stepsCount" : 1,
+        "hasContent" : true,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверить загрузку страницы",
+      "time" : {
+        "start" : 1767855818582,
+        "stop" : 1767855818666,
+        "duration" : 84
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать раздел 'Соусы'",
+      "time" : {
+        "start" : 1767855818666,
+        "stop" : 1767855818731,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверить, что раздел 'Соусы' активен",
+      "time" : {
+        "start" : 1767855818731,
+        "stop" : 1767855818756,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Нажать раздел 'Булки'",
+      "time" : {
+        "start" : 1767855818757,
+        "stop" : 1767855818812,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверить, что раздел 'Булки' активен",
+      "time" : {
+        "start" : 1767855818812,
+        "stop" : 1767855818833,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Завершение теста",
+      "time" : {
+        "start" : 1767855818833,
+        "stop" : 1767855818833,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ConstructorTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testSwitchBackToBunsSection"
+  }, {
+    "name" : "suite",
+    "value" : "Тестирование раздела 'Конструктор'"
+  }, {
+    "name" : "host",
+    "value" : "WIN-BGDUOA9RM37"
+  }, {
+    "name" : "thread",
+    "value" : "20860@WIN-BGDUOA9RM37.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bce9c3780f638acd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1767855768405,
+        "stop" : 1767855771115,
+        "duration" : 2710
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5855803bab7c6667.json",
+  "parameterValues" : [ ]
+}
